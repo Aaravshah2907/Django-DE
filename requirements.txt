@@ -1,0 +1,26 @@
+# requirements.txt for Mathematical Equation Solver
+
+# Core packages
+numpy>=1.24.0
+pillow>=10.0.0
+sympy==1.13.1
+typing-extensions>=4.5.0
+
+# Image processing
+opencv-python>=4.8.0
+
+# OCR
+pix2tex[gui]==0.1.4
+albumentations==1.4.24  # Required by pix2tex
+
+# LaTeX to SymPy conversion
+latex2sympy2-extended[antlr4_13_2]
+
+# PyTorch (needed for pix2tex)
+# For CPU:
+torch>=2.0.0
+torchvision>=0.15.0
+
+# For CUDA support, uncomment and modify as needed:
+# torch>=2.0.0+cu118 -f https://download.pytorch.org/whl/cu118
+# torchvision>=0.15.0+cu118 -f https://download.pytorch.org/whl/cu118
